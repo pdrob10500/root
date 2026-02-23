@@ -538,7 +538,7 @@ Some bonds have purchase funds, which enable stock to be purchased in the market
 
 The average life is given by:
 
-$$A L=\frac{\sum_{i=1}^{n} A_{i} \cdot  L_{i}}{\sum_{i=1}^{n} A_{i}}\quad (4.1)$$
+$$A L=\frac{\sum_{i=1}^{n} A_{i} \cdot  L_{i}}{\sum_{i=1}^{n} A_{i}}(4.1)$$
 
 where: $\begin{array}{rcl} AL &=& \text{average life} \\ n &=& \text{number of future capital repayments} \\ A_i &=& i\text{th future repayment amount} \\ L_i &=& \text{time in years to the }i\text{th repayment} \end{array}$
 
@@ -580,7 +580,7 @@ The equivalent life of a bond is the period from the value date to the average o
 
 The equivalent life is given by:
 
-$$E L=\frac{\sum_{i=1}^{n} A_{i} \cdot  I_{i} \cdot  v^{L i}}{\sum_{i=1}^{n} A_{i} \cdot  v^{L i}}\quad (4.2)$$
+$$E L=\frac{\sum_{i=1}^{n} A_{i} \cdot  I_{i} \cdot  v^{L i}}{\sum_{i=1}^{n} A_{i} \cdot  v^{L i}}(4.2)$$
 
 where: $\begin{array}{rcl} & E L & = & \text{equivalent life } \\ & n & = & \text{number of future capital repayments } \\ & A_{i} & = & \text{ith future repayment amount } \\ & L_{i} & = & \text{time in years to the ith repayment } \\ & \nu & = & \text{annualized discounting factor } \end{array}$
 
@@ -592,7 +592,7 @@ Using the same example as in average life of a bond which is redeemed at par in 
 
 $$v=1/(1+0.1)=0.90909$$
 
-$$EL\quad =\quad \frac{20\times5v^{5}+10\times6v^{6}+70\times7v^{7}}{20\times v^{5}+10\times v^{6}+70\times v^{7}}$$
+$$EL=\frac{20\times5v^{5}+10\times6v^{6}+70\times7v^{7}}{20\times v^{5}+10\times v^{6}+70\times v^{7}}$$
 
 16
 
@@ -611,15 +611,15 @@ The concept of duration is a better measure of the life of the investment, as it
 
 Mathematically duration is given by:
 
-$$D=\frac{\sum_{i=1}^{n} C F_{i} \cdot  L_{i} \cdot  v^{L i}}{\sum_{i=1}^{n} C F_{i} \cdot  v^{L i}}\quad (4.3)$$
+$$D=\frac{\sum_{i=1}^{n} C F_{i} \cdot  L_{i} \cdot  v^{L i}}{\sum_{i=1}^{n} C F_{i} \cdot  v^{L i}}(4.3)$$
 
 where: $\begin{array}{rcl} D &=& \text{duration} \\ n &=& \text{number of future coupon and capital cash flows} \\ CF_i &=& \text{ith future cash flow} \\ L_i &=& \text{time in years to the ith cash flow} \\ v &=& \text{annualized discounting factor} \end{array}$ i.e. if the annualized yield is y then $v = 1/(1+y)$ ( $y=0.08$ for a yield of 8 % )
 
 Since the gross price of a bond is just the present value of all future cash flows equation (4.3) can be re-written:
 
-$$D=\frac{1}{P}\cdot \sum_{i=1}^{n}CF_{i}\cdot  L_{i}\cdot \nu^{Li}\quad (4.4)$$
+$$D=\frac{1}{P}\cdot \sum_{i=1}^{n}CF_{i}\cdot  L_{i}\cdot \nu^{Li}(4.4)$$
 
-where: $\quad  P = $  gross price (i.e. clean price plus accrued interest).
+where: $P = $  gross price (i.e. clean price plus accrued interest).
 
 The above calculations are also known as the Macaulay Duration.
 
@@ -635,7 +635,7 @@ For a zero coupon bond the duration is the same as the life to maturity.
 
 For a bond with a fixed coupon $g$ payable $h$ times per annum, with a normal first coupon payment, which is redeemable on one coupon date, it can be shown that the duration can be given by:
 
-$$D=\frac{f1}{h}+\frac{g\cdot  v^{f1}}{P\cdot  h^{2}}\cdot \left\{v+2v^{2}+\cdot s+(n-1)v^{n-1}\right\}+\frac{C}{P\cdot  h}\cdot (n-1)v^{n+f1-1}\quad (4.5)$$
+$$D=\frac{f1}{h}+\frac{g\cdot  v^{f1}}{P\cdot  h^{2}}\cdot \left\{v+2v^{2}+\cdot s+(n-1)v^{n-1}\right\}+\frac{C}{P\cdot  h}\cdot (n-1)v^{n+f1-1}(4.5)$$
 
 where: $\begin{array}{rcl} D &=& \text{duration} \\ g &=& \text{annual coupon rate } \% \\ h &=& \text{number of coupon payments per year} \\ n &=& \text{number of coupon payments to redemption} \\ P &=& \text{gross price (i.e. clean price plus accrued interest)} \\ C &=& \text{redemption value} \\ f1 &=& \text{fraction of a period from value date to the first interest} \\ & & \text{payment date. A period is defined as the normal time} \\ & & \text{between two consecutive coupon payments} \\ v &=& \text{discounting factor i.e. if the yield compounded } h \text{ times} \\ & & \text{per annum is y then } v = 1/(1 + y/h) \\ & & (y = 0.08 \text{ for a yield of } 8\%) \end{array}$
 
@@ -716,15 +716,15 @@ The modified duration or volatility of a bond gives the percentage change in pri
 
 The modified duration is given by:
 
-$$MD=-\frac{dP}{dy}\cdot \frac{1}{P}\quad (4.7)$$
+$$MD=-\frac{dP}{dy}\cdot \frac{1}{P}(4.7)$$
 
-where: $\quad $ $MD$ = modified duration $P$ = gross price (i.e. clean price plus accrued interest) $dP$ = small change in price $dy$ = corresponding small change in yield compounded with the frequency of the coupon payment
+where: $$ $MD$ = modified duration $P$ = gross price (i.e. clean price plus accrued interest) $dP$ = small change in price $dy$ = corresponding small change in yield compounded with the frequency of the coupon payment
 
 It can be easily proved (see Appendix I) that modified duration and duration are related by:
 
-$$MD=D\cdot  v\quad (4.8)$$
+$$MD=D\cdot  v(4.8)$$
 
-where: $\quad  \begin{matrix} MD &= & \text{modified duration} \\ D &= & \text{duration} \end{matrix}$
+where: $\begin{matrix} MD &= & \text{modified duration} \\ D &= & \text{duration} \end{matrix}$
 
 20
 
@@ -763,28 +763,28 @@ It can be seen that the actual redemption yield for all prices is greater than o
 
 Mathematically convexity is given by:
 
-$$C X=\frac{1}{P} \cdot  \frac{d^{2} P}{d y^{2}}\quad (4.9)$$
+$$C X=\frac{1}{P} \cdot  \frac{d^{2} P}{d y^{2}}(4.9)$$
 
-where: $\quad  CX = $ convexity $\quad  P = $ gross price $\quad  y = $ yield ( $y=0.08$ for a yield of 8 % ) and the second derivative of $P$ with respect to $y$ is derived from equation (5.3) which is discussed in the next chapter.
+where: $CX = $ convexity $P = $ gross price $y = $ yield ( $y=0.08$ for a yield of 8 % ) and the second derivative of $P$ with respect to $y$ is derived from equation (5.3) which is discussed in the next chapter.
 
 This formula is expanded in Appendix Ⅰ.
 
 In practice instead of solving equation (4.9) it is usually sufficient to solve the approximation below:
 
-$$C X=10^{6} \cdot \left(P_{1}+P_{2}-2 P\right) / P\quad (4.10)$$
+$$C X=10^{6} \cdot \left(P_{1}+P_{2}-2 P\right) / P(4.10)$$
 
-where: $\quad $ $CX = $ = convexity $P = $ gross price at the current yield $P_I = $ gross price of the security if the yield were to increase by 10 basis points (0.1 % ) $P_2 = $ gross price of the security if the yield were to decrease by 10 basis points
+where: $$ $CX = $ = convexity $P = $ gross price at the current yield $P_I = $ gross price of the security if the yield were to increase by 10 basis points (0.1 % ) $P_2 = $ gross price of the security if the yield were to decrease by 10 basis points
 
 Example ▶
 
 Using the above example of a 10 year bond priced at par with a 10% annual coupon we have:
 
-$$P_{I} \quad =\quad 99.388174 \quad  (yield of  10.1 \%$$
+$$P_{I} =99.388174 (yield of  10.1 \%$$
 
 $$P_{2} = 100.617105 (yield of 9.9\%)$$
 
 $$\begin{aligned}
- therefore  \quad C X & =& 10^{6} \times(99.388174+100.617105-200) / 100 \\
+ therefore  C X & =& 10^{6} \times(99.388174+100.617105-200) / 100 \\
 & = & 0.005279 \times 10^{4} \\
 & = & 53
 \end{aligned}$$
@@ -806,7 +806,7 @@ The current yield of a bond is also known as a flat, running or interest yield .
 
 The current yield of a bond is given by the formula:
 
-$$C Y=\frac{g \cdot  100}{C P} .\quad (5.1)$$
+$$C Y=\frac{g \cdot  100}{C P} .(5.1)$$
 
 where: $\begin{array}{rcl} CY &=& \text{current yield } \% \\ g &=& \text{annual coupon rate } \% \\ CP &=& \text{clean price (i.e. not including any accrued interest)} \end{array}$
 
@@ -834,9 +834,9 @@ The simple yield to maturity is also known as a Japanese yield. It takes into ac
 
 The simple yield to maturity of a bond is given by:
 
-$$SY=\frac{g+(C-CP)/L}{CP}\quad (5.2)$$
+$$SY=\frac{g+(C-CP)/L}{CP}(5.2)$$
 
-where: $\quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad  \quad
+where:
 
 Example ›
 
@@ -862,9 +862,9 @@ The redemption yield of a bond is that discount rate that would make the sum of 
 
 In other words the redemption yield $y$ is given by solving an equation of the form below:
 
-$$P = \sum _ { i = 1 } ^ { n } C F _ { i } \cdot  v ^ { L i } \quad ( 5 . 3 )$$
+$$P = \sum _ { i = 1 } ^ { n } C F _ { i } \cdot  v ^ { L i } ( 5 . 3 )$$
 
-where: $\quad $ $P = $ = gross price (i.e. clean price plus accrued interest) $n$ = number of future cash flows $CF_i$ = ith cash flow $L_i$ = time in periods to the ith cash flow, taking into account the market conventions for calculating the fraction of a period, (e.g. does the year have 360 or 365 days). $v$ = discounting factor i.e. $v = 1/(1 + y/h)$ $h$ = number of periods in the year $y$ = required redemption yield compounded h times per annum ( $y = 0.08$ for a yield of 8 % ).
+where: $$ $P = $ = gross price (i.e. clean price plus accrued interest) $n$ = number of future cash flows $CF_i$ = ith cash flow $L_i$ = time in periods to the ith cash flow, taking into account the market conventions for calculating the fraction of a period, (e.g. does the year have 360 or 365 days). $v$ = discounting factor i.e. $v = 1/(1 + y/h)$ $h$ = number of periods in the year $y$ = required redemption yield compounded h times per annum ( $y = 0.08$ for a yield of 8 % ).
 
 N.B. in the case of partly-paid issues, future price calls are regarded as negative cash flows.
 
@@ -955,7 +955,7 @@ For a fully paid fixed coupon bond paying $h$ times per year with an assumed sin
 
 BOND MARKETS: STRUCTURES AND YIELD CALCULATIONS
 
-$$P=v^{f1}\cdot \left(k+\sum_{i=1}^{n-1}\frac{g}{h}\cdot  v^{i}\right)+\left(C+\frac{g}{h}\cdot  f2\right)\cdot  v^{n+f1+f2-1}\quad (5.4)$$
+$$P=v^{f1}\cdot \left(k+\sum_{i=1}^{n-1}\frac{g}{h}\cdot  v^{i}\right)+\left(C+\frac{g}{h}\cdot  f2\right)\cdot  v^{n+f1+f2-1}(5.4)$$
 
 where: $\begin{array}{rcl} P &=& \text{gross price (i.e. clean price plus accrued interest)} \\ g &=& \text{annual coupon rate } \% \\ k &=& \text{first/next coupon payment } \% \\ h &=& \text{number of periods in the year.} \\ & & \text{So each normal coupon payment is } g/h \\ n &=& \text{number of coupon payments to assumed redemption,} \\ & & \text{excluding any fractional payment on redemption} \\ f1 &=& \text{fraction of a period from value date to the first/next} \\ & & \text{interest payment. A period is defined as the normal time} \\ & & \text{between two consecutive coupon payments} \\ f2 &=& \text{fraction of a period from the last normal coupon date to} \\ & & \text{the assumed redemption} \\ C &=& \text{redemption value} \\ v &=& \text{discounting factor i.e. } v = 1/(1 + y/h) \\ y &=& \text{required redemption yield compounded } h \text{ times per} \\ & & \text{annum } (y = 0.08 \text{ for a yield of } 8\%) \end{array}$
 
@@ -965,7 +965,7 @@ The above formula calculates the same redemption yield for a semi-annual bond as
 
 This formula can be re-written as:
 
-$$P=v^{f1}\cdot \left\{k+\frac{g}{h}\cdot \frac{v\left(1-v^{n-1}\right)}{(1-v)}+\left(C+\frac{g}{h}\cdot  f2\right)\cdot  v^{n+f2-1}\right\}\quad (5.5)$$
+$$P=v^{f1}\cdot \left\{k+\frac{g}{h}\cdot \frac{v\left(1-v^{n-1}\right)}{(1-v)}+\left(C+\frac{g}{h}\cdot  f2\right)\cdot  v^{n+f2-1}\right\}(5.5)$$
 
 It can be restated as:
 
@@ -988,17 +988,17 @@ and $n$ does not equal 1 this formula can be transformed into:
 
 Yields
 
-$$Y=\frac{G}{q}+\frac{(R\cdot  q)}{q\cdot  x}\quad (5.6)$$
+$$Y=\frac{G}{q}+\frac{(R\cdot  q)}{q\cdot  x}(5.6)$$
 
 $$x=\frac{\left(I-v^{n-1}\right)}{Y\cdot  v^{n-1}}$$
 
 This formula states that the redemption yield is equal to the current yield plus an income stream which, if re-invested at the yield rate, would at maturity amount to the proportionate capital gain or loss. Since the second factor is relatively insensitive to changes in $y$ when $n$ is greater than 2, the equation is in a form which is suitable for rapid solution by iteration. However, when $n=2$ , the equation sometimes converges very slowly or even diverges. In these circumstances a more appropriate rearrangement of equation (5.5) which converges quickly is:
 
-$$Y=\left\{\frac{(G+R) \cdot  v}{P}+\frac{k}{P}\right\}^{1 / f 1}-1\quad (5.7)$$
+$$Y=\left\{\frac{(G+R) \cdot  v}{P}+\frac{k}{P}\right\}^{1 / f 1}-1(5.7)$$
 
 If $n=1$ the yield equation (5.5) can be re-written:
 
-$$Y=\left\{\frac{R+k}{P}\right\}^{1/f 1}-1\quad (5.8)$$
+$$Y=\left\{\frac{R+k}{P}\right\}^{1/f 1}-1(5.8)$$
 
 Yields on bonds in their last coupon period (i.e. where $n=1$ ) are described further in section 5.3.2 .
 
@@ -1008,9 +1008,9 @@ The number of iterations required to solve the yield equation (5.6) , (5.7) or (
 
 An initial approximation which gives reasonable results is:
 
-$$Y_{o}=\frac{G}{C P}+\left\{\frac{C}{C P}\right\}^{1 / L}-1\quad (5.9)$$
+$$Y_{o}=\frac{G}{C P}+\left\{\frac{C}{C P}\right\}^{1 / L}-1(5.9)$$
 
-where: $\quad  Y_o \quad  =$ initial approximation $G \quad  =$ normal coupon payment % for the compounding period $C \quad  =$ redemption value $CP \quad  =$ clean price $L \quad  =$ life = $n + f1 + f2$ -1
+where: $Y_o =$ initial approximation $G =$ normal coupon payment % for the compounding period $C =$ redemption value $CP =$ clean price $L =$ life = $n + f1 + f2$ -1
 
 The above formula can be applied to calculate yields to maturity, call, extension and put, and for bonds with sinking funds, yields to average life.
 
@@ -1054,13 +1054,13 @@ The normal compound redemption yield formula (5.4) reduces in the last coupon pe
 
 $$ Yields $$
 
-$$\begin{array} { r } { \rho = \left[ \frac { g } { h } + C \right] \cdot  v ^ { f 1 } \quad ( 5 . 1 0 ) } \end{array}$$
+$$\begin{array} { r } { \rho = \left[ \frac { g } { h } + C \right] \cdot  v ^ { f 1 } ( 5 . 1 0 ) } \end{array}$$
 
 where: P = gross price (i.e. clean price plus accrued interest) g = annual coupon rate h = number of coupon payments per year. In this case it has been assumed that a normal coupon g/h is paid at redemption. f1 = fraction of a period from value date to the redemption date. A period is defined as the normal time between two consecutive coupon payments C = redemption value v = discounting factor i.e. $v = 1/(1 + \gamma h)$ y = required redemption yield compounded h times per annum ($y = 0.08$ for a yield of 8%)
 
 The formula (5.10) may be re-written as:
 
-$$P \cdot  \left\{ \begin{array} { l } { \left( 1 + { \frac { y } { h } } \right) ^ { f l } } \\ { \quad { = } { \frac { g } { h } } + C } \end{array} \right. \quad ( 5 . 1 1 )$$
+$$P \cdot  \left\{ \begin{array} { l } { \left( 1 + { \frac { y } { h } } \right) ^ { f l } } \\ { { = } { \frac { g } { h } } + C } \end{array} \right. ( 5 . 1 1 )$$
 
 This formula can be expanded to:
 
@@ -1076,7 +1076,7 @@ This formula may be re-stated as:
 
 $$P=\frac{\frac{g}{h}+C}{1+MMY\cdot \frac{d}{a}}.$$
 
-$$M M Y=\frac{\left(\frac{g}{h}+C-P\right)}{P} \cdot  \frac{a}{d}\quad (5.12)$$
+$$M M Y=\frac{\left(\frac{g}{h}+C-P\right)}{P} \cdot  \frac{a}{d}(5.12)$$
 
 31
 
@@ -1133,7 +1133,7 @@ N.B. the money market yield, based on a 360-day year calendar, is equivalent to 
 
 For zero coupon bonds the redemption yield formula (5.3) reduces to:
 
-$$P=C\cdot  v^{n+f1-1}\quad (5.13)$$
+$$P=C\cdot  v^{n+f1-1}(5.13)$$
 
 if one treats ii, for the purpose of calculating $fl$ and $n$, as a bond which pays zero coupons once a year on an anniversary of the redemption date. This automatically implies that $f2=0$ and the clean price $CP$ is the same as the gross price $P$.
 
@@ -1167,13 +1167,13 @@ The formula for undedited securities (perpetuals) assumes that the capital will 
 
 Based on these assumptions the redemption yield formula (5.3) reduces to:
 
-$$\begin{array} { r l } { P = v ^ { f 1 } \cdot  \left\{ k + \frac { g } { h } \cdot  \left( v + v ^ { 2 } + v ^ { 3 } + \cdot s \right) \right\} } & {  } \\ { P = v ^ { f 1 } \cdot  \left\{ k + \frac { g \cdot  v } { h \cdot  ( f - v ) } \right\} } & {  } \\ { P = v ^ { f 1 } \cdot  \left\{ k + \frac { g } { y } \right\} } & {  \quad ( 5 . 1 4 ) } \end{array}$$
+$$\begin{array} { r l } { P = v ^ { f 1 } \cdot  \left\{ k + \frac { g } { h } \cdot  \left( v + v ^ { 2 } + v ^ { 3 } + \cdot s \right) \right\} } & {  } \\ { P = v ^ { f 1 } \cdot  \left\{ k + \frac { g \cdot  v } { h \cdot  ( f - v ) } \right\} } & {  } \\ { P = v ^ { f 1 } \cdot  \left\{ k + \frac { g } { y } \right\} } & {  ( 5 . 1 4 ) } \end{array}$$
 
 where: $P = \text{gross price (i.e. clean price plus accrued interest)}$ $g = \text{annual coupon rate }$ $k = \text{first/next coupon payment }$ $h = \text{number of periods in the year. So each normal coupon payment is } g/n$ $f1 = \text{fraction of a period from value date to the first/next interest payment. A period is defined as the normal time between two consecutive coupon payments}$ $v = \text{discounting factor i.e. } v = f1/(1+y/h)$ $y = \text{required redemption yield compounded } h \text{ times per annum }(y = 0.08 \text{ for a yield of } 8\%)$
 
 The equation (5.14) can be solved as described in the Appendix I or as:
 
-$$y = \frac { g } { \left( \frac { P } { v ^ { f 1 } } - k \right) } \quad \quad ( 5 . 1 5 )$$
+$$y = \frac { g } { \left( \frac { P } { v ^ { f 1 } } - k \right) } ( 5 . 1 5 )$$
 
 which can be solved by iteration with an initial approximation $y_n$ in the right hand side of:
 
@@ -1193,7 +1193,7 @@ Consider an undated bond which pays an annual coupon of 7% on 1 December each ye
 
 $$\left( ) / \rho ^ { d , s } - 7 \right)$$
 
-where: $\quad  v=1/(1+y)$
+where: $v=1/(1+y)$
 
 This gives: $y=7.772\%$
 
@@ -1228,7 +1228,7 @@ The redemption yield calculation which discounts all the actual coupon and capit
 
 The formula for calculating the redemption yield to equivalent life of a bond with a fixed coupon, where all capital repayments are made on a coupon date, can be written as:
 
-$$P=v^{f1}\cdot \left\{R_{l}+R_{2}\cdot  v+R_{3}\cdot  v^{2}+\cdot s+R_{n}\cdot  v^{n-1}\right\}\quad (5.16)$$
+$$P=v^{f1}\cdot \left\{R_{l}+R_{2}\cdot  v+R_{3}\cdot  v^{2}+\cdot s+R_{n}\cdot  v^{n-1}\right\}(5.16)$$
 
 where: p = gross price (i.e. clean price plus accrued interest) g = annual coupon rate % k = first/next coupon payment % h = number of periods in the year. So each normal coupon payment is g/h n = number of coupon payments to final redemption f1 = fraction of a period from value date to the first/next coupon payment. A period is defined as the normal time between two consecutive coupon payments Ci = percentage of the issue redeemed with the nth coupon payment R1 = k + C1 Ri = Ci + (1 - F1) · g / h for i = 2 to n F1 = fraction of the issue redeemed prior to the coupon date.
 
@@ -1274,7 +1274,7 @@ $$P + \sum _ { i = 1 } ^ { n } R _ { i } \cdot  v ^ { i } = v ^ { f } \left[ \be
 
 where: P = gross partly paid price (i.e. market price plus accrued interest)
 
-$$R_{i} \quad =\quad  future calls for  i=1  to  j$$
+$$R_{i} =future calls for  i=1  to  j$$
 
 1997年
 
@@ -1364,15 +1364,15 @@ FLOATING RATE NOTE CALCULATIONS
 
 The simple margin is given by the formula:
 
-$$S M = \frac { C -  A d j u s t e d ~ P r i c e  } { L } + Q M \quad ( 6 . 1 )$$
+$$S M = \frac { C -  A d j u s t e d P r i c e  } { L } + Q M ( 6 . 1 )$$
 
-where: $\quad  \begin{array}{lll} SM &=&  \text{simple margin } \% \\ C &=&  \text{redemption value } \\ L &=&  \text{life of the FRN in years } \\ QM &=&  \text{quoted margin } \%\end{array}$
+where: $\begin{array}{lll} SM &=&  \text{simple margin } \% \\ C &=&  \text{redemption value } \\ L &=&  \text{life of the FRN in years } \\ QM &=&  \text{quoted margin } \%\end{array}$
 
 and where the price is adjusted for differences in the current indicator rate and that set at the last coupon fixing.
 
 There are various ways that the price may be adjusted for interest rate changes, however, a method which does not have any discontinuities is shown in the simple margin calculation below:
 
-$$S M = \frac { C \cdot  \left( P + ( I + Q M ) \cdot  I \cdot  1 - k \right) } { L } + Q M \quad ( 6 . 2 )$$
+$$S M = \frac { C \cdot  \left( P + ( I + Q M ) \cdot  I \cdot  1 - k \right) } { L } + Q M ( 6 . 2 )$$
 
 where: SM = simple margin % C = redemption value P = gross price (i.e. clean price plus accrued interest) I = indicator rate to the next coupon date % QM = quoted margin % f1 = fraction of a year from the value date to the first/next coupon date (actual days divided by 360, 365 or 365/366-days according to the issue) k = first/next coupon payment % L = life in years (actual days/assumed number of days in a year)
 
@@ -1396,13 +1396,13 @@ BOND MARKETS: STRUCTURES AND YIELD CALCULATIONS
 
 Consider the following U.S. dollar FRN which is redeemed at par on 31 May 2003. It pays interest on 31 May and 30 November each year at 0.25% above the six month LIBOR for U.S. dollars. On the 30 November 1997 the coupon to be paid on 31 May 1998 was set relative to a six month LIBOR rate of 9%. If on the 30 January 1998 the LIBOR rate to 31 May 1998 is 8% and the FRN is being traded at a price of 98%, then the simple margin is calculated as follows:
 
-$$k \quad =\quad (9+0.23) \times \frac{182}{360}=4,676.39  as there are  182  days in the period$$
+$$k =(9+0.23) \times \frac{182}{360}=4,676.39  as there are  182  days in the period$$
 
-$$|f_{1}|=\left|\frac{121}{360}=0.33611\right| \quad 121  days from settlement to coupon date$$
+$$|f_{1}|=\left|\frac{121}{360}=0.33611\right| 121  days from settlement to coupon date$$
 
-$$| \quad L \quad = \quad (365+365+366+365+365+121) / 360=5.40833$$
+$$| L = (365+365+366+365+365+121) / 360=5.40833$$
 
-$$P \quad =\quad 98+(9+0.25) \times \frac{67}{360}=99.56736$$
+$$P =98+(9+0.25) \times \frac{67}{360}=99.56736$$
 
 $$\begin{array} { r l r } { S M } & { = } & { \frac { 1 0 0 - ( 9 9 . 5 6 7 3 6 + ( 8 + 0 . 2 5 ) \times 0 . 3 3 6 1 1 - 4 . 6 7 6 3 9 ) + 0 . 2 5 \times 0 . 3 3 6 1 1 } { 5 . 4 0 8 3 3 } } \\ & { = } & { \frac { 1 0 0 - 9 7 . 6 6 3 8 8 } { 5 . 4 0 8 3 3 } + 0 . 2 5 = 0 . 6 8 2 \% } \end{array}$$
 
@@ -1422,7 +1422,7 @@ Floating OATING Rate ATE Note OTE Calculations ALCULATIONS
 
 The discounted margin for FRNs redeemed on a normal coupon date may be obtained by solving:
 
-$$P \cdot  \left(1+\frac{(I+D M)}{100}-f 1\right)=k+\frac{\beta}{2} \frac{\left(I_{2}+Q M\right)}{h} \cdot  v^{1}+C \cdot  v^{i-1}\quad (6.3)$$
+$$P \cdot  \left(1+\frac{(I+D M)}{100}-f 1\right)=k+\frac{\beta}{2} \frac{\left(I_{2}+Q M\right)}{h} \cdot  v^{1}+C \cdot  v^{i-1}(6.3)$$
 
 where: $DM = $ required discounted margin % $P = $ gross price (i.e. clean price plus accrued interest) $I = $ current market indicator rate from the value date to the first coupon date % $I2 = $ assumed market indicator rate for subsequent coupon payments % $f1 = $ fraction of a year from the value date to the first/next coupon date (actual days divided by 360, 365 or 365/366 days according to the issue) $k = $ first/next coupon payment % $n = $ number of future coupon payments $QM = $ quoted margin % $h = $ number of coupon payments per year adjusted if not Euro-sterling for the assumed number of days in the year e.g. for a U.S. dollar FRN with two coupon payments per year, $h$ will be $2 \times 360/365.25$ $C = $ redemption value $v = $ discounting factor i.e. $v = 1/(1 + (I2 + DM)/100h) $
 
@@ -1452,15 +1452,15 @@ The calculation of a current yield is the same as for a fixed rate bond, althoug
 
 BOND MARKETS: STRUCTURES AND YIELD CALCULATIONS
 
-$$\begin{array} { r l } { ( 9 8 + 1 . 5 6 7 3 6 ) \times \Bigg ( 1 + \frac { 8 + D M } { 1 0 0 } \cdot  \frac { 1 2 1 } { 3 6 0 } \Bigg ) } & { = 4 . 6 7 6 3 9 } \\ & { \quad + \sum _ { i = 1 } ^ { 1 0 } \left( \frac { ( 8 + 0 . 2 5 ) } { 1 . 9 7 1 2 5 3 } \cdot  v ^ { i } + 1 0 0 \cdot  v ^ { 1 0 } \right) } \end{array}$$
+$$\begin{array} { r l } { ( 9 8 + 1 . 5 6 7 3 6 ) \times \Bigg ( 1 + \frac { 8 + D M } { 1 0 0 } \cdot  \frac { 1 2 1 } { 3 6 0 } \Bigg ) } & { = 4 . 6 7 6 3 9 } \\ & { + \sum _ { i = 1 } ^ { 1 0 } \left( \frac { ( 8 + 0 . 2 5 ) } { 1 . 9 7 1 2 5 3 } \cdot  v ^ { i } + 1 0 0 \cdot  v ^ { 1 0 } \right) } \end{array}$$
 
-where: $\quad  v={\frac {1}{1+{\begin{matrix}\displaystyle \frac {DM}{(197.1253)}\end{matrix}}}}$
+where: $v={\frac {1}{1+{\begin{matrix}\displaystyle \frac {DM}{(197.1253)}\end{matrix}}}}$
 
 This gives $DM=0.789\%$
 
 For undated FRNs (perpetuals) the discounted margin formula (6.3) simplifies to:
 
-$$P \quad \left(1+\frac{I \cdot  D M}{100} \cdot  f\right) \mid)=k+100 \cdot \left(\frac{f 2+Q M}{f 2-D M}\right) .\quad (6.4)$$
+$$P \left(1+\frac{I \cdot  D M}{100} \cdot  f\right) \mid)=k+100 \cdot \left(\frac{f 2+Q M}{f 2-D M}\right) .(6.4)$$
 
 $$ Example  \to $$
 
@@ -1482,15 +1482,15 @@ On the other hand the general redemption yield formula (5.3) can be applied to F
 
 It can be re-written:
 
-$$P = \sum _ { i } k _ { i } \cdot  v ^ { f 1 + i } + C \cdot  v ^ { f 1 + m } \quad ( 6 . 5 )$$
+$$P = \sum _ { i } k _ { i } \cdot  v ^ { f 1 + i } + C \cdot  v ^ { f 1 + m } ( 6 . 5 )$$
 
-where: $\quad $ $P$ = gross price (i.e. clean price plus accrued interest) $h$ = number of coupon payments per year $n$ = number of coupon payments to assumed redemption $f1$ = fraction of a period from value date to the first/next coupon payment. A period is defined as the normal time between two consecutive coupon payments $C$ = redemption value $k_i$ = assumed ith coupon payment % $t_i$ = time in periods from the next to the ith coupon payment $v$ = discounting factor i.e. $v = 1/(1 + \gamma v h)$ $y$ = required redemption yield compounded $h$ times per annum $(v = 0.08$ for a yield of 8%)
+where: $$ $P$ = gross price (i.e. clean price plus accrued interest) $h$ = number of coupon payments per year $n$ = number of coupon payments to assumed redemption $f1$ = fraction of a period from value date to the first/next coupon payment. A period is defined as the normal time between two consecutive coupon payments $C$ = redemption value $k_i$ = assumed ith coupon payment % $t_i$ = time in periods from the next to the ith coupon payment $v$ = discounting factor i.e. $v = 1/(1 + \gamma v h)$ $y$ = required redemption yield compounded $h$ times per annum $(v = 0.08$ for a yield of 8%)
 
 To solve this equation satisfactorily means that future coupon rates have to be predicted. One objective way is to assume that the current rates will not change in the future.
 
 This formula can be simplified if it is assumed that all future coupon dates are equidistant and redemption occurs on a normal coupon date. Equation (6.5) can then be re-written:
 
-$$P = v ^ { f } \cdot  \left\{ v + \sum _ { h } \frac { g } { h } \, v ^ { h } \, , ~ v ^ { i } + C \cdot  v ^ { e i } \right\} \quad ( 6 . 6 )$$
+$$P = v ^ { f } \cdot  \left\{ v + \sum _ { h } \frac { g } { h } \, v ^ { h } \, , v ^ { i } + C \cdot  v ^ { e i } \right\} ( 6 . 6 )$$
 
 where: known first/next coupon payment % assumed adjusted annual coupon rate, for payments after the known first coupon payment. Rates, which are quoted on the basis of a 360-day year, are multiplied by 565.25/360.
 
@@ -1520,7 +1520,7 @@ Hence:
 
 $$P \ = \ 98 + 0 . 6 8 9$$
 
-$$k \quad = \ 2$$
+$$k = \ 2$$
 
 $$g ~=~(8 + 0.25) \times 365.25/360 = 8.3703$$
 
@@ -1556,9 +1556,9 @@ BOND MARKETS: STRUCTURES AND YIELD CALCULATIONS
 
 The exercise cost of purchasing an equity share via a convertible in the currency of the equity is given by:
 
-$$E C = \frac { P \cdot  P C \cdot  C R } { 1 0 0 \cdot  F R } \quad ( 7 . 1 )$$
+$$E C = \frac { P \cdot  P C \cdot  C R } { 1 0 0 \cdot  F R } ( 7 . 1 )$$
 
-where: $\quad $ EC = exercise cost $\quad $ P = gross price of the bond (i.e clean price plus accrued interest) $\quad $ PC = conversion price (in the currency of the share) $\quad $ FR = fixed exchange rate, expressed in units of the underlying equity currency that can be purchased for one unit of the bond denominated currency e.g. if a U.S. dollar convertible bond is convertible into Japanese yen shares at the rate of USD 1 = JPY 125 then the rate will be 125 $CR$ = current exchange rate, expressed as above
+where: $$ EC = exercise cost $$ P = gross price of the bond (i.e clean price plus accrued interest) $$ PC = conversion price (in the currency of the share) $$ FR = fixed exchange rate, expressed in units of the underlying equity currency that can be purchased for one unit of the bond denominated currency e.g. if a U.S. dollar convertible bond is convertible into Japanese yen shares at the rate of USD 1 = JPY 125 then the rate will be 125 $CR$ = current exchange rate, expressed as above
 
 If the convertible and the shares are in the same currency FR and CR are both 1.
 
@@ -1570,7 +1570,7 @@ $${\begin{array}{l}}R={\frac {CR}{ER}}\\V=V_{0}\end{array}}$$
 
 $$\begin{array} { r l r } { \theta = ( \rho + \lambda ) } & {  } & { \tau = \frac { \rho \cdot  C _ { T } \cdot  R } { \rho + \lambda } - 1 0 \theta ^ { * } \, . } \end{array}$$
 
-$$ \begin{array} { r l r } {  w h e r e :  ~ ~ ~ ~ ~ ~ ~ P M } & { = } & { ~ ~  c o n v e r s i o n ~ p r e m i u m / d i s c o u n t ~  \% } \\ { S P } & { = } & { ~ ~  s h a r e ~ p r i c e  \quad = \frac { ( \rho + \lambda ) \cdot  ( \rho + \lambda ) } { \rho } \cdot  \frac { \rho } { \rho } \cdot  \frac { R } { \rho } \cdot  1 0 0 \, . } \end{array}$$
+$$ \begin{array} { r l r } {  w h e r e :  P M } & { = } & {  c o n v e r s i o n p r e m i u m / d i s c o u n t  \% } \\ { S P } & { = } & {  s h a r e p r i c e  = \frac { ( \rho + \lambda ) \cdot  ( \rho + \lambda ) } { \rho } \cdot  \frac { \rho } { \rho } \cdot  \frac { R } { \rho } \cdot  1 0 0 \, . } \end{array}$$
 
 In the above the conversion premium/discount calculation uses the gross price as any accrued interest on the bond is lost on conversion, however the market often quotes the premium/discount on clean bond prices.
 
@@ -1628,7 +1628,7 @@ A break-even period can be calculated, which measures the number of years one wo
 
 The break-even period for a convertible and equity in the same currency is given by the formula:
 
-$$B E=\frac{E C \cdot  S P}{\left(g \cdot  \frac{P C}{100} \cdot  d\right)}\quad (7.3)$$
+$$B E=\frac{E C \cdot  S P}{\left(g \cdot  \frac{P C}{100} \cdot  d\right)}(7.3)$$
 
 where: BE = break-even period in years EC = exercise cost of purchasing one share via the convertible SP = share price PC = conversion price g = annual convertible coupon rate % d = gross equity dividend payment
 
@@ -1660,7 +1660,7 @@ In other words the exercise cost of purchasing the underlying bond via the warra
 
 $$E C=\left\{W P \cdot  C R+\frac{E P \cdot  E V}{100}\right\} \cdot  \frac{100}{E V} .(8.1)$$
 
-where: $\quad $ $EC$ = exercise cost in the currency of the underlying bond $WP$ = warrant price $CR$ = current exchange rate, expressed in units of the bond currency that can be purchased for one unit of the warrant currency. If they are the same currency then $CR=1$ $EP$ = exercise price of the bond (% price basis) $EV$ = face (par) value of the underlying bonds which may be purchased per warrant
+where: $$ $EC$ = exercise cost in the currency of the underlying bond $WP$ = warrant price $CR$ = current exchange rate, expressed in units of the bond currency that can be purchased for one unit of the warrant currency. If they are the same currency then $CR=1$ $EP$ = exercise price of the bond (% price basis) $EV$ = face (par) value of the underlying bonds which may be purchased per warrant
 
 In the international bond market, it is normal to express bond warrant prices as the actual cost of the warrant.
 
@@ -1685,15 +1685,15 @@ Each warrant will entitle the holder to subscribe for USD 1,000 principal amount
 If the warrants are priced at USD 24, the exercise cost (EC) of purchasing the USD 1000 principal amount of the 9 12% bonds will be:
 
 $$\begin{aligned}
-EC\quad & =\quad (24+(100\times1000)/100)\times100/1000\\
-& =\quad 102.4\%  plus any accrued interest 
+EC& =(24+(100\times1000)/100)\times100/1000\\
+& =102.4\%  plus any accrued interest 
 \end{aligned}$$
 
 If the warrant gives the holder the right to purchase a bond which already exists a premium/discount of purchasing the bond via the warrant as opposed to directly may be calculated.
 
 The premium/discount is given by:
 
-$$ P M  = { \left[ \begin{array} { l } { E C } \\ { C P } \end{array} \right] } \cdot  { \mathbb { I } } _ { 1 0 0 } \quad ( 8 . 2 )$$
+$$ P M  = { \left[ \begin{array} { l } { E C } \\ { C P } \end{array} \right] } \cdot  { \mathbb { I } } _ { 1 0 0 } ( 8 . 2 )$$
 
 where: PM = warrant premium/discount % EC = exercise cost CP = clean price of the underlying bond
 
@@ -1714,9 +1714,9 @@ WARRANTS
 
 If an equity warrant gives the holder the right to purchase n shares at a price of $EP$ per share, then $EP$ is termed the exercise price and the exercise cost of purchasing a share via the warrant is:
 
-$$E C = \frac { W P \cdot  C R } { n } + E P \quad ( 8 . 3 )$$
+$$E C = \frac { W P \cdot  C R } { n } + E P ( 8 . 3 )$$
 
-where: $\quad $ $EC$ = exercise cost $WP$ = warrant price $CR$ = current exchange rate, expressed in units of the equity currency that can be purchased for one unit of the warrant currency. If they are the same currency then $CR=1$ $EP$ = exercise price $n$ = number of shares that can be purchased per warrant
+where: $$ $EC$ = exercise cost $WP$ = warrant price $CR$ = current exchange rate, expressed in units of the equity currency that can be purchased for one unit of the warrant currency. If they are the same currency then $CR=1$ $EP$ = exercise price $n$ = number of shares that can be purchased per warrant
 
 N.B. in the above the warrant price is the price that has to be paid for the warrant. It is not the market quoted percentage price.
 
@@ -1733,7 +1733,7 @@ $$=265.5+1138=JPY1403.5\text{ per share}$$
 
 The premium/discount of purchasing an equity via a warrant as opposed to purchasing direct is calculated as below:
 
-$$P M = \left| { \begin{array} { l } { E C } \\ { S P } \end{array} } - 1 \right| \cdot  1 0 0 \quad ( 8 . 4 )$$
+$$P M = \left| { \begin{array} { l } { E C } \\ { S P } \end{array} } - 1 \right| \cdot  1 0 0 ( 8 . 4 )$$
 
 where: PM = warrant premium/discount % EC = exercise cost of purchasing a share via the warrant SP = share price
 
@@ -1757,13 +1757,13 @@ A warrant has an intrinsic value when the exercise price is less than the share 
 
 The intrinsic value is given by:
 
-$$I V=(S P-E P) \cdot  n \quad  if  S P>E P\quad (8.5)$$
+$$I V=(S P-E P) \cdot  n if  S P>E P(8.5)$$
 
 where: IV = intrinsic value SP = share price EP = exercise price n = number of shares that can be purchased per warrant
 
 For warrants which are expected to be exercised, there is a tendency for the premium or discount to remain stable in the short term, when the share price moves. However, since the warrant price per share is usually considerably less than the share price, the percentage price movement is usually much greater. The effect is known as warrant gearing or leverage and is given by:
 
-$$ W G = \frac { S P \cdot  n } { W P \cdot  C R } ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~$$
+$$ W G = \frac { S P \cdot  n } { W P \cdot  C R } ~$$
 
 where: $WG = warrant gearing$ $SP = share price$ $WP = warrant price$ $CR = current exchange rate, expressed in units of the equity currency that can be purchased for one unit of the warrant currency. If they are the same currency then $CR=1$ $n = number of shares that can be purchased per warrant$
 
@@ -1799,7 +1799,7 @@ Discounts are quoted at an annual rate based normally on a 360 or 365-day year i
 
 The percentage price paid for a money market instrument quoted at a discount rate $R$ is:
 
-$$P = 1 0 0 \cdot  \left[ 1 - { \frac { R \cdot  f ( 1 ) } { 1 0 0 } } \right] \quad ( 9 . 1 )$$
+$$P = 1 0 0 \cdot  \left[ 1 - { \frac { R \cdot  f ( 1 ) } { 1 0 0 } } \right] ( 9 . 1 )$$
 
 where: P = percentage price R = discount rate % fl = fraction of a year from settlement to redemption based on actual days divided by the assumed number of days in the year (i.e. 360 or 365)
 
@@ -1814,7 +1814,7 @@ Consider a bill which will be redeemed on 30 June 1998, and is being traded for 
 $$\begin{aligned}
 P&=100\times\left\{1-\frac{8}{100}\times\frac{138}{365}\right\}\\
 &=96.9753\%
-\end{aligned}\quad \text{as there are 138 days between}
+\end{aligned}\text{as there are 138 days between}
 \text{settlement and redemption.}$$
 
 On the other hand if it were a U.S. dollar bill, it would be traded at a percentage price (P) where:
@@ -1828,7 +1828,7 @@ Any discount rate can readily be converted into a yield for comparison with othe
 
 $$MMY=\frac{R}{P}\cdot 100$$
 
-$$ M M Y  = \frac { R } { \left( 1 - R \cdot  f / 1 0 0 \right) } \quad ( 9 . 2 )$$
+$$ M M Y  = \frac { R } { \left( 1 - R \cdot  f / 1 0 0 \right) } ( 9 . 2 )$$
 
 where: $MMY = money market yield \%$ $R = discount rate \%$ $P = percentage price$ $f1 = fraction of a year from settlement to redemption$
 
@@ -1854,7 +1854,7 @@ $$\begin{array} { r l r } { M M Y } & {  = } & { \frac { 1 0 0 - f } { ( P - f )
 
 BOND MARKETS: STRUCTURES AND YIELD CALCULATIONS
 
-$${ \underline { { u } } } = { \frac { 1 0 0 - P } { P } } \cdot  { \frac { a } { d } } \quad ( 9 . 3 )$$
+$${ \underline { { u } } } = { \frac { 1 0 0 - P } { P } } \cdot  { \frac { a } { d } } ( 9 . 3 )$$
 
 where $d = \frac{\text{number of days according to the relevant calendar until redemption.}}{a = \text{number of days in the calendar year.}}$
 
@@ -1868,7 +1868,7 @@ Some money market instruments are quoted on a yield as opposed to a discount bas
 
 For a certificate of deposit (CD) or other instrument being traded on a yield basis, with one coupon payment on redemption, the percentage price is given by:
 
-$$P = \frac { ( C + k ) } { ( 1 + y \cdot  f ) } , \quad ( 9 . 4 )$$
+$$P = \frac { ( C + k ) } { ( 1 + y \cdot  f ) } , ( 9 . 4 )$$
 
 where: P = percentage price C = percentage redemption value (with CDs normally 100%) k = percentage coupon payment on redemption i.e. $k = g \cdot  f$ where g is the quoted annual interest rate and f is the fraction of a year from either the last coupon date or the issue date to redemption y = quoted yield (y = 0.08 for a yield of 8%) f1 = fraction of a year from settlement to redemption
 
@@ -1884,11 +1884,11 @@ If for settlement on the 16 October 1997 it was trading at 8.4%, the percentage 
 
 MONEY MARKET INSTRUMENTS
 
-$$P\quad =\frac{(100+9\times122/360)}{(1+0.084\times60/360)}=\frac{103.05}{1.014}=101.627\%$$
+$$P=\frac{(100+9\times122/360)}{(1+0.084\times60/360)}=\frac{103.05}{1.014}=101.627\%$$
 
 On the other hand if it were still trading at 9% the price would have been:
 
-$$P\quad =\frac{(100+9\times122/360)}{(1+0.09\ 60/360)}=\frac{103.05}{1.015}=101.527\%$$
+$$P=\frac{(100+9\times122/360)}{(1+0.09\ 60/360)}=\frac{103.05}{1.015}=101.527\%$$
 
 ### 9.2.2 Calculation for instruments with more than one coupon
 
@@ -1896,9 +1896,9 @@ The principle used to calculate the settlement price $P$ of a certificate of dep
 
 The percentage price of a CD quoted on a yield basis y is given by:
 
-$$P = ( 1 + y \, f ) = \sum _ { n = 1 } ^ { \infty } { \frac { G _ { n } } { E _ { n } } } + { \frac { C } { E _ { n } } } \quad ( 9 . 5 )$$
+$$P = ( 1 + y \, f ) = \sum _ { n = 1 } ^ { \infty } { \frac { G _ { n } } { E _ { n } } } + { \frac { C } { E _ { n } } } ( 9 . 5 )$$
 
-where: $\quad $ $P = $ percentage price of the CD, including any accrued interest $f1 = $ fraction of a year from the value date to the first/next coupon date i.e. it is the number of days between the two dates divided by the assumed number of days in the year (i.e. 360 or 365) $y = $ quoted yield. This yield will be compounded at the same frequency as the coupon payment. $G_t = $ ith coupon payment. If the CD has a fixed coupon of $g\%$ p.a. then $G_t = g$ times the number of days since the previous coupon or issue date divided by the assumed number of days in a year $E_i = $ aggregate discounting factor for each of the cash flows $E_1 = 1$ $E_i = E_{i-1} \cdot  (1 + y \cdot  f_i)$ for $i = 2$ to $n$ $f_i = $ fraction of a year of the ith coupon period i.e. number of days divided by the assumed number of days in the year $n = $ number of future coupon payments $C = $ percentage redemption value
+where: $$ $P = $ percentage price of the CD, including any accrued interest $f1 = $ fraction of a year from the value date to the first/next coupon date i.e. it is the number of days between the two dates divided by the assumed number of days in the year (i.e. 360 or 365) $y = $ quoted yield. This yield will be compounded at the same frequency as the coupon payment. $G_t = $ ith coupon payment. If the CD has a fixed coupon of $g\%$ p.a. then $G_t = g$ times the number of days since the previous coupon or issue date divided by the assumed number of days in a year $E_i = $ aggregate discounting factor for each of the cash flows $E_1 = 1$ $E_i = E_{i-1} \cdot  (1 + y \cdot  f_i)$ for $i = 2$ to $n$ $f_i = $ fraction of a year of the ith coupon period i.e. number of days divided by the assumed number of days in the year $n = $ number of future coupon payments $C = $ percentage redemption value
 
 Example ▶
 
@@ -1920,7 +1920,7 @@ Similarly the discounting factors are:
 
 $$E_{i}=1$$
 
-$$E_{2}=\quad (1+0.0925\times 184/360)=1.04728$$
+$$E_{2}=(1+0.0925\times 184/360)=1.04728$$
 
 $$E_{3}=1.04728\times(1+0.0925\times181/360)=1.09598$$
 
@@ -1928,7 +1928,7 @@ Thus the price (P) is given by:
 
 $$\begin{aligned}
 P\times(1+0.0925\times28/360)=&\frac{9}{360}\times(\frac{181}{1}+\frac{184}{1.04728}+\frac{181}{1.09598})\\
-&\quad +\frac{100}{1.09598}
+&+\frac{100}{1.09598}
 \end{aligned}$$
 
 $$P=103.543 \%$$
@@ -2028,23 +2028,23 @@ $$P=v^{0.66667}\times\left\{4.5+4.5v\times\frac{\left(1-v^{30}\right)}{(1-v)}+10
 
 as:
 
-$$y \quad =0 . I$$
+$$y =0 . I$$
 
-$$\nu \quad =1 /(1+0.05)=0.9238$$
+$$\nu =1 /(1+0.05)=0.9238$$
 
-$$k \quad = 4.5$$
+$$k = 4.5$$
 
-$$g \quad = \ 9$$
+$$g = \ 9$$
 
-$$h \quad =2$$
+$$h =2$$
 
-$$f1\quad =120/180=0.66667$$
+$$f1=120/180=0.66667$$
 
 $$\begin{matrix} \varphi & = & \theta \end{matrix}$$
 
-$$C \quad =100$$
+$$C =100$$
 
-$$n \quad = 3 I$$
+$$n = 3 I$$
 
 which gives a gross price (including accrued interest):
 
@@ -2074,17 +2074,17 @@ $$P=v^{0.58333}\times(10+10/0.0875)$$
 
 as
 
-$$y\quad =0.0875$$
+$$y=0.0875$$
 
-$$v\quad =1/(1+0.0875)=0.91954$$
+$$v=1/(1+0.0875)=0.91954$$
 
-$$k \quad = \quad 10$$
+$$k = 10$$
 
-$$g \quad = \quad 1 0$$
+$$g = 1 0$$
 
-$$h \quad = \quad I$$
+$$h = I$$
 
-$$f 1 \quad =210 / 360=0.58333$$
+$$f 1 =210 / 360=0.58333$$
 
 which gives a gross price:
 
@@ -2218,11 +2218,11 @@ $$ ddd/yyy $$
 
 where ddd is the day count method. Unless it is specified to the contrary, the day count is from the issuer or last coupon date (inclusive) up to but excluding the value date. and yyy is the number of days in the year.
 
-$ddd \quad $ may take the values:
+$ddd $ may take the values:
 
 act = actual number of calendar days 30E = 30 day month - European style (see chapter 3) 30U = 30 day month - U.S. style (see chapter 3).
 
-$yyy \quad $ may take the values:
+$yyy $ may take the values:
 
 360 = days 365 = 365 days year = 365 days normally but 366 days in a leap year. act = n times the actual number of days in the period, where n is the number of periods in the year.
 
@@ -2381,7 +2381,7 @@ They are usually issued with a life of 3, 6 or 9 months.
 
 The official conversion from price to yield, and vice versa, takes place according to money market practice. Using this convention, the yield is given by:
 
-$$Money market yield = \frac{1,000,000 \cdot  Price}{Price}, \quad 360$$
+$$Money market yield = \frac{1,000,000 \cdot  Price}{Price}, 360$$
 
 where $d$ = actual number of calendar days remaining.
 
@@ -2393,7 +2393,7 @@ For the same security a bond yield may also be calculated.
 
 It is given by:
 
-$$B o n d ~ y i e l d = \left[ 1 + \frac { 1 , 0 0 0 , 0 0 0 \cdot   P r i c e  } {  P r i c e  } \right] ^ { 3 6 0 / d b } - 1$$
+$$B o n d y i e l d = \left[ 1 + \frac { 1 , 0 0 0 , 0 0 0 \cdot   P r i c e  } {  P r i c e  } \right] ^ { 3 6 0 / d b } - 1$$
 
 where $db=$ number of bond days (on a 360E basis) to maturity.
 
@@ -2489,7 +2489,7 @@ BOND MARKETS: STRUCTURES AND YIELD CALCULATIONS
 
 The price P is given by:
 
-$$P = v f \left( 1 + \left\{ \frac { k } { 2 \pi } \sum _ { j = 2 } ^ { n } \frac { v ^ { 0 . 5 ( j - 1 ) } } { 2 } \right. \right) + 1 0 0 \cdot  v ^ { 0 . 5 ( j - 1 ) } , \quad M \geq 1 0 0 .$$
+$$P = v f \left( 1 + \left\{ \frac { k } { 2 \pi } \sum _ { j = 2 } ^ { n } \frac { v ^ { 0 . 5 ( j - 1 ) } } { 2 } \right. \right) + 1 0 0 \cdot  v ^ { 0 . 5 ( j - 1 ) } , M \geq 1 0 0 .$$
 
 where: $P$ = bond price $k$ = known next semi-annual coupon payment $g$ = expected subsequent coupon payments, based on the current value of LIBOR $M0$ = base U.S. dollar rate $M1$ = known U.S. dollar rate, adjusted for forecast monthly devaluation rate $n$ = number of coupon payments to redemption $f1$ = fraction of a year from the value date to the first/next interest payment $v$ = discounting factor i.e. $v = 1/(1+y)$ $y$ = redemption yield. $(y = 0.08$ for a yield of 8%).
 
@@ -2704,13 +2704,13 @@ The redemption yield $y$ of a security, compounded annually, is given by solving
 
 $$P=\sum_{i=1}^{n}C F_{i}\cdot  v^{L i}$$
 
-where: $\quad $ $P$ = gross price (i.e. clean price plus accrued interest) $n$ = number of future cash flows, where n may be infinite $CF_i$ = ith cash flow $L_i$ = time in years to the ith cash flow, taking into account the market conventions for calculating the fraction of a year, (e.g. does the year have 360 or 365-days). $\nu$ = discounting factor i.e. $\nu = 1/1 + y$ $y$ = required redemption yield compounded annually (y = 0.08 for a yield of 8%).
+where: $$ $P$ = gross price (i.e. clean price plus accrued interest) $n$ = number of future cash flows, where n may be infinite $CF_i$ = ith cash flow $L_i$ = time in years to the ith cash flow, taking into account the market conventions for calculating the fraction of a year, (e.g. does the year have 360 or 365-days). $\nu$ = discounting factor i.e. $\nu = 1/1 + y$ $y$ = required redemption yield compounded annually (y = 0.08 for a yield of 8%).
 
 This general redemption yield formula, which assumes that all cash flows irrespective of their timing are discounted at the same rate, works for all securities. In the case of partly paid issues, future price calls are regarded as negative cash flows. Similarly for unbonded bonds it is infinite, as it is assumed that the issuer never defaults.
 
 In chapter 4 we stated that the modified duration $MD$ of a bond was given by:
 
-$$M D = - \, { \frac { d P } { d y } } \quad P$$
+$$M D = - \, { \frac { d P } { d y } } P$$
 
 where: P = gross price (i.e. clean price plus accrued interest) dp = small change in price dy = corresponding small change in yield
 
@@ -2750,7 +2750,7 @@ $${ \begin{array} { r l } { C X } & { = \frac { 1 } { P } \cdot  { \frac { d ^ {
 
 The redemption yield formula can be solved in a general way using the NewtonRaphson method.
 
-$$Let \quad f ( v ) = P - \sum _ { i } C F _ { i } \quad , \mu  _ { L }$$
+$$Let f ( v ) = P - \sum _ { i } C F _ { i } , \mu  _ { L }$$
 
 then the first derivative $df/dv = f^1(v)$ is given by;
 
@@ -2804,7 +2804,7 @@ Redemption yields with different compounding frequencies are related by the form
 
 $$(1+y_{a})=\left(1+\frac{y_{a}}{2}\right)^{2}=\left(1+\frac{y_{a}}{q}\right)^{4}=\left(1+\frac{2 y_{a}}{4}\right)^{1/3}$$
 
-where: $y_{u} \quad = \quad $ yield compounded annually $y_{u} \quad = \quad $ yield compounded semi-annually $y_{q} \quad = \quad $ yield compounded quarterly $y_{m} \quad = \quad $ yield compounded monthly
+where: $y_{u} = $ yield compounded annually $y_{u} = $ yield compounded semi-annually $y_{q} = $ yield compounded quarterly $y_{m} = $ yield compounded monthly
 
 In the above formulae, yields of 12% would be substituted as 0.12 etc.
 
@@ -2850,7 +2850,7 @@ For a stock which pays an indexed coupon $h$ times a year, with a similarly inde
 
 $$P=\sum_{i=1}^{n} C F_{i} \cdot  v^{L i}$$
 
-where: $\quad $ $P \quad $ = gross price (i.e. clean price plus accrued interest) $n \quad $ = number of future cash flows $C I_{t} \quad $ = ith cash flow, which changes with the underlying index. $L_{t} \quad $ = time in years to the ith cash flow $v \quad $ = the gross discounting factor, i.e. $v=1/(1+y/h)$ $h \quad $ = number of periods in year $y \quad $ = the required redemption yield compounded h times per annum. (y = 0.08 for a yield of 8%)
+where: $$ $P $ = gross price (i.e. clean price plus accrued interest) $n $ = number of future cash flows $C I_{t} $ = ith cash flow, which changes with the underlying index. $L_{t} $ = time in years to the ith cash flow $v $ = the gross discounting factor, i.e. $v=1/(1+y/h)$ $h $ = number of periods in year $y $ = the required redemption yield compounded h times per annum. (y = 0.08 for a yield of 8%)
 
 can be restated as follows.
 
@@ -2860,7 +2860,7 @@ APPENDIX III - INDEX-LINKED STOCKS AND REAL RETURNS
 
 If the assumed rate of indexing is $r$ % per period, the next known coupon payment is $k$ , and the best estimate of the following coupon is $k_2$ , then it is assumed that the $i$ th coupon payment is:
 
-$$k _ { 2 } \cdot  ( 1 + r ) ^ { i - 2 } ~  f o r  ~ i \geq 2$$
+$$k _ { 2 } \cdot  ( 1 + r ) ^ { i - 2 }  f o r  i \geq 2$$
 
 It should be noted that it is often possible to make a better estimate of $k_2$ than $k \cdot  (1 + r)$, since the index value for at least part of the period is already known due to the lagging.
 
@@ -2874,13 +2874,13 @@ The real rate of return y is given by solving:
 
 $$P = v ^ { f 1 } \cdot  \left\{ k + \sum _ { i = 2 } ^ { n } k _ { 2 } \cdot  ( 1 + r ) ^ { i - 2 } \cdot  v ^ { i - 1 } + C \cdot  ( 1 + r ) ^ { n - 2 } \cdot  v ^ { n - 1 } \right\}$$
 
-where: $\quad  C = $ redemption value calculated at the same index level as the next coupon payment k $\quad  k_{1} = $ next known coupon payment $\quad  k_{2} = $ best estimate of the subsequent coupon payment. $\quad  f1 = $ fraction of a period from value date to the first/next coupon payment. A period is defined as the normal time between two consecutive coupon payments $\quad  v = $ overall discounting factor, i.e. $\quad  v = \frac{1}{(1+r) \cdot  (1+y/h)}$ $\quad  r = $ assumed indexing rate per period $\quad  h = $ number of coupon payments per year $\quad  y = $ real rate of return per year (i.e. y = 0.04 for a real return of 4.0%).
+where: $C = $ redemption value calculated at the same index level as the next coupon payment k $k_{1} = $ next known coupon payment $k_{2} = $ best estimate of the subsequent coupon payment. $f1 = $ fraction of a period from value date to the first/next coupon payment. A period is defined as the normal time between two consecutive coupon payments $v = $ overall discounting factor, i.e. $v = \frac{1}{(1+r) \cdot  (1+y/h)}$ $r = $ assumed indexing rate per period $h = $ number of coupon payments per year $y = $ real rate of return per year (i.e. y = 0.04 for a real return of 4.0%).
 
 This formula may be restated as:
 
 $$P = \left\{ \frac { w } { 1 + r } \right\} ^ { f 1 } \cdot  \left\{ k + \frac { w } { 1 + r } \cdot  \left( \sum _ { i = 2 } ^ { n } k _ { 2 } \cdot  w ^ { j - 2 } + C \cdot  w ^ { n - 2 } \right) \right\}$$
 
-where: $\quad  w\quad  =\quad  $ 'real' discounting factor, i.e. $\quad  w=1/(1+y/\nu )\quad  v=(1+r)$
+where: $w=$ 'real' discounting factor, i.e. $w=1/(1+y/\nu )v=(1+r)$
 
 95
 
