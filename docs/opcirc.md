@@ -51,31 +51,67 @@ The United Kingdom DebtManagement Office is an Executive Agency of HM Treasury
 
 ![Figure](figures/opcirc-2_figure_014.png)
 
-(2) Setten entbetween 8 June 2000 and 28 November 2000$^{1}$ (both inclusive).
+(2) Setten entbetween 8 June 2000 and 28 Novem ber 2000$^{1}$ (both inclusive).
 
 The accrued interest (per £100 nominal) will be calculated as follows:
 
-$$A I=\left|\frac{7  June  2000-25  M ay  2000}{7  June  2000-7  D ecem ber  1999}+\frac{ Setlem entdate -7  June  2000}{7  D ecem ber  2000-7  June  2000}\right| \times \frac{4.25}{2}$$
+$$A I=\frac{7  June  2000-25  M ay  2000}{7  June  2000-7  D ecem ber  1999}+\frac{ Settlem entdate -7  June  2000}{7  D ecem ber  2000-7  June  2000} \times \frac{4.25}{2}$$
 
 This figure is then scaled up to reflect the nominalsize of the trade and then rounded to the nearestpenny on the transaction.
 
-$$ Exam ple: $$
+Exampl e:
 
-Trade size (nom ina1):      £1,000,000.00 Settlem entdate:            19 September 2000
+Trade size (nom ina1): £1,000,000.00
 
-$$A I=\left.\left.\left.\frac{7  June  2000-25  M ay  2000}{7  June  2000-7  D ecem ber  1999}\right.\right.\right.\left.\left.\left.\frac{19  Septem ber  2000-7  June  2000}{7  D ecem ber  2000-7  June  2000}\right)\right\} \times \frac{4.25}{2} \times \frac{1,000,000.00}{100}$$
+Settlem entdate: 19 Septem ber 2000
+
+$$A I=\left.\frac{7  June  2000-25 M  ay  2000}{7  June  2000-7  D ecem ber  1999}+\frac{19  S eptem ber  2000-7  June  2000}{7  D ecem ber  2000-7  June  2000}\right] \times \frac{4.25}{2} \times \frac{1,000,000.00}{100}$$
 
 (rounded to the nearestpenny)
 
-$$=\frac{13}{183}+\frac{104}{183} \times \frac{4.25}{2} \times \frac{1,000,000.00}{100}$$
+$$=\frac{\left|13\right|}{183}+\frac{104}{183} \times \frac{4.25}{2} \times \frac{1,000,000.00}{100}$$
 
 (rounded to the nearestpenny)
 
 $$= \pounds 13,586.07$$
 
-$^{1}$ 28 November 2000 is the gift's ex-dividend date.
+$^{1}$ 28 November 2000 is the gilt's ex-dividend date.
+
+The United Kingdom Debitm anagem entO ffice is an Executive Agency of HM Treasury
+
+![Figure](figures/opcirc-3_figure_013.png)
+
+(3) Setten entbetween 29 Novem ber 2000 and 7 Decem ber 2000$^{2}$ (both inclusive).
+
+The accrued interest(per£100 nom ina) w illbe cabulated as folbws:
+
+$$A I=\left.\left.\left|\frac{ Setlem entdate -7  June  2000}{7  D ecem ber  2000-7  June  2000}\right| 1\right| \times \frac{4.25}{2}$$
+
+This figure is then scaled up to reflect the nominal of the trade and then rounded to the nearest penny on the transaction.
+
+Example:
+
+Trade size (nom nal):      £1,000,000.00
+
+Settlem entdate: 4 Decem ber 2000
+
+$$A I=\left.\left[\frac{4  D ecem ber  2000-7  June  2000}{7  D ecem ber  2000-7  June  2000}-1\right]\right] \times \frac{4.25}{2} \times \frac{1,000,000.00}{100}$$
+
+(rounded to the nearestpenny)
+
+$$=\frac{180}{183}-1 \times \frac{4.25}{2} \times \frac{1,000,000.00}{100}$$
+
+(rounded to the nearestpenny)
+
+$$= -£348.36$$
+
+Intereston 4% Treasury Stock 2032 willaccrue in the usualmanner from 8December2000.
+
+Any queries on this OperationalCircular should be directed to Mark Deacon (020 7862 6516) or Gum inter Bhachu (020 7862 6512) at the UK DebtManagement office.
+
+2 Ex-dividend settlem ent
 
 The United Kingdom DebtManagement Office is an Executive Agency of HM Treasury
 
-![Figure](figures/opcirc-3_figure_013.png)
+![Figure](figures/opcirc-4_figure_016.png)
 
